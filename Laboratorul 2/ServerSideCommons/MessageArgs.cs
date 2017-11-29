@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Proxy
+namespace ServerSideCommons
 {
     public class MessageArgs : EventArgs
     {

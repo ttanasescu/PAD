@@ -19,7 +19,7 @@ namespace Node
         private readonly UdpClient _udpClient;
         private NodeConfig _nodeConfig;
         private readonly TcpListener _tcpListener;
-        private readonly List<TcpConnectionHandler> _tcpConnectionHandlers;
+        private readonly List<TcpClientHandler> _tcpConnectionHandlers;
 
         private List<Book> _books;
         private List<Movie> _movies;
@@ -31,7 +31,7 @@ namespace Node
 
             LoadData(name);
 
-            _tcpConnectionHandlers = new List<TcpConnectionHandler>();
+            _tcpConnectionHandlers = new List<TcpClientHandler>();
 
             var tcpIpAddress = IPAddress.Parse(_nodeConfig.CurrentNode.IPAddress);
             var tcpPort = _nodeConfig.CurrentNode.Port;
@@ -136,7 +136,7 @@ namespace Node
                 try
                 {
                     var tcpClient = _tcpListener.AcceptTcpClient();
-                    var tcpClientHandler = new TcpConnectionHandler(tcpClient)
+                    var tcpClientHandler = new TcpClientHandler(tcpClient)
                     {
                         RecievedMessageHandler = ProcessRequest
                     };

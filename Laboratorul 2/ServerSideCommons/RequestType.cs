@@ -1,4 +1,4 @@
-﻿namespace Proxy
+﻿namespace ServerSideCommons
 {
     public enum RequestType
     {

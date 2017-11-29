@@ -5,16 +5,15 @@ using System.Net.Sockets;
 using System.Threading;
 using Common;
 
-namespace Node
+namespace ServerSideCommons
 {
-    internal class TcpConnectionHandler
+    public class TcpClientHandler
     {
         private readonly TcpClient _tcpClient;
         private bool _isServing;
         public EventHandler<MessageArgs> RecievedMessageHandler;
-        //public EventHandler ClientDisconectedHandler;
 
-        public TcpConnectionHandler(TcpClient tcpClient)
+        public TcpClientHandler(TcpClient tcpClient)
         {
             _tcpClient = tcpClient;
         }
@@ -44,6 +43,11 @@ namespace Node
                     while (_isServing)
                     {
                         var line = reader.ReadLine();
+                        if (string.IsNullOrEmpty(line))
+                        {
+                            Console.WriteLine("Client disconnected.");
+                            throw new InvalidOperationException();
+                        }
                         var message = Base64.Decode(line);
 
                         var args = new MessageArgs(message);
@@ -54,11 +58,10 @@ namespace Node
                     }
                 }
             }
-            catch (Exception e)
+            catch (InvalidOperationException e)
             {
                 Debug.WriteLine(e.Message);
                 Console.WriteLine("Client disconnected.");
-                // ClientDisconectedHandler(this, EventArgs.Empty);
                 _tcpClient.Close();
                 _tcpClient.Dispose();
             }

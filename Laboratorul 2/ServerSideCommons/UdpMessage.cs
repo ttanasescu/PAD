@@ -1,6 +1,6 @@
-﻿namespace Proxy
+﻿namespace ServerSideCommons
 {
-    internal class UdpMessage
+    public class UdpMessage
     {
         public RequestType RequestType { get; set; }
 

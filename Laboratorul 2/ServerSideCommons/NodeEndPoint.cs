@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace Node
+namespace ServerSideCommons
 {
     public class NodeEndPoint
     {
