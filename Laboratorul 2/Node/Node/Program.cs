@@ -240,13 +240,15 @@ namespace Node
             newRequest.ResultAsJson = true;
             newRequest.OrderBy = null;
 
-            if (--newRequest.TimeToLive>0)
+            if (--newRequest.TimeToLive > 0)
             {
                 var endPoints = new List<IPEndPoint>(_nodeConfig.Connections.Count);
-                endPoints.AddRange(_nodeConfig.Connections.Select(endPoint => new IPEndPoint(IPAddress.Parse(endPoint.IPAddress), endPoint.Port)));
-            
-                tasks.AddRange(endPoints.Select(endPoint => Task.Run(() => SendRequest(newRequest.SerializeJson(), endPoint))));
-            
+                endPoints.AddRange(_nodeConfig.Connections.Select(endPoint =>
+                    new IPEndPoint(IPAddress.Parse(endPoint.IPAddress), endPoint.Port)));
+
+                tasks.AddRange(endPoints.Select(endPoint =>
+                    Task.Run(() => SendRequest(newRequest.SerializeJson(), endPoint))));
+
                 tasks.WaitAll();
             }
 

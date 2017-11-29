@@ -85,7 +85,7 @@ namespace Client
             return response.Deserialize<List<T>>();
         }
 
-        private static bool IsValidXml<T>(string xmlString)
+        private static bool IsValidXml<T>(string xmlString) where T : Entity
         {
             var xdoc = XDocument.Parse(xmlString);
             var schemas = new XmlSchemaSet();
