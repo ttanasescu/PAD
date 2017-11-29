@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ArrayOfMovie>
+  <Movie>
+    <Director>Steven Spielberg</Director>
+    <Title>Music of Chance, The</Title>
+    <Year>2007</Year>
+    <Grossing>10510324</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Georgie Plascott</Director>
+    <Title>Art of the Steal, The</Title>
+    <Year>1993</Year>
+    <Grossing>10377085</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Reggis Camfield</Director>
+    <Title>The Chaos Class Failed the Class</Title>
+    <Year>2007</Year>
+    <Grossing>29883188</Grossing>
+  </Movie>
+</ArrayOfMovie>

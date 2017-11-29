@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ArrayOfMovie>
+  <Movie>
+    <Director>Dehlia Greggersen</Director>
+    <Title>Deaths of Ian Stone, The</Title>
+    <Year>1997</Year>
+    <Grossing>2520593</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Woodrow Mc Carrick</Director>
+    <Title>Pariah</Title>
+    <Year>1995</Year>
+    <Grossing>5893475</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Steven Spielberg</Director>
+    <Title>Deranged</Title>
+    <Year>2000</Year>
+    <Grossing>3587453</Grossing>
+  </Movie>
+</ArrayOfMovie>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ArrayOfMovie>
+  <Movie>
+    <Director>Giffard Hartin</Director>
+    <Title>Flawless</Title>
+    <Year>2006</Year>
+    <Grossing>21612131</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Steven Spielberg</Director>
+    <Title>Gas, Food, Lodging</Title>
+    <Year>1977</Year>
+    <Grossing>10704079</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Cher Gingedale</Director>
+    <Title>Foreign Correspondent</Title>
+    <Year>2009</Year>
+    <Grossing>13779377</Grossing>
+  </Movie>
+</ArrayOfMovie>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ArrayOfMovie>
+  <Movie>
+    <Director>Steven Spielberg</Director>
+    <Title>Pit, The</Title>
+    <Year>1998</Year>
+    <Grossing>27390003</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Julina Haye</Director>
+    <Title>The Damned</Title>
+    <Year>2008</Year>
+    <Grossing>29807628</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Dirk Burgoine</Director>
+    <Title>Devil Hunter (El caníbal)</Title>
+    <Year>1998</Year>
+    <Grossing>4366649</Grossing>
+  </Movie>
+</ArrayOfMovie>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ArrayOfMovie>
+  <Movie>
+    <Director>Tilda Heisler</Director>
+    <Title>Admiral</Title>
+    <Year>2001</Year>
+    <Grossing>20185779</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Annice Fourcade</Director>
+    <Title>Go Figure (Va savoir)</Title>
+    <Year>1996</Year>
+    <Grossing>22637978</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Steven Spielberg</Director>
+    <Title>Kid Cannabis</Title>
+    <Year>1997</Year>
+    <Grossing>5779803</Grossing>
+  </Movie>
+</ArrayOfMovie>

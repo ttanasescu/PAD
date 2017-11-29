@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NodeConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <CurrentNode>
+      <Name>Node5</Name>
+      <IPAddress>127.0.0.1</IPAddress>
+      <Port>8005</Port>
+   </CurrentNode>
+   <Connections>
+      <NodeEndPoint>
+         <Name>Node4</Name>
+         <IPAddress>127.0.0.1</IPAddress>
+         <Port>8004</Port>
+      </NodeEndPoint>
+      <NodeEndPoint>
+         <Name>Node6</Name>
+         <IPAddress>127.0.0.1</IPAddress>
+         <Port>8006</Port>
+      </NodeEndPoint>
+   </Connections>
+</NodeConfig>

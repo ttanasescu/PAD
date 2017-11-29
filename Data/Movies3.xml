@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ArrayOfMovie>
+  <Movie>
+    <Director>Bobbe Barthropp</Director>
+    <Title>Anaconda</Title>
+    <Year>2007</Year>
+    <Grossing>10416501</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Yetta Yelden</Director>
+    <Title>Eddie and the Cruisers II: Eddie Lives!</Title>
+    <Year>1997</Year>
+    <Grossing>27882107</Grossing>
+  </Movie>
+  <Movie>
+    <Director>Lindon Tidswell</Director>
+    <Title>Madeinusa</Title>
+    <Year>2007</Year>
+    <Grossing>25126353</Grossing>
+  </Movie>
+</ArrayOfMovie>
